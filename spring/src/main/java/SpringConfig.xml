@@ -6,6 +6,8 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
    <bean id="carBean" class="org.spring.Car">
+		<constructor-arg ref="engineBean" />
    </bean>
 
+	<bean id="engineBean" class="org.spring.FourHEngine"/>
 </beans>
